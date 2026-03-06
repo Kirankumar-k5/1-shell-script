@@ -8,6 +8,7 @@
 #echo "$PERSON2:: I am leaning Shell. what about you?"
 
 
+#only names change every where if the no.of line more 
 PERSON1=Trump
 PERSON2=Putin #no space b/w value and =
 echo "$PERSON1:: Hello $PERSON2, How r u?"
