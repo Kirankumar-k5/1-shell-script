@@ -11,3 +11,11 @@ USERID=$(id -u)   # to get root user id
 
 echo "installing nginx"
 dnf install nginx -y
+
+   if [ $? -ne 0 ]; then
+      echo "installing nginx...failure"
+    
+      exit 1
+    else 
+      echo " installin nginx...success"
+   fi
