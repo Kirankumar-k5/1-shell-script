@@ -9,7 +9,7 @@ echo "Sum is : $SUM"
 
 
 ## ARRAY ##
-Fruits=("Apple","Banana","Pomo")
+Fruits=("Apple" "Banana" "Pomo")
 
 echo "Fruits are: ${Fruits[@]}"
 echo "First Fruit is: ${Fruits[0]}"
