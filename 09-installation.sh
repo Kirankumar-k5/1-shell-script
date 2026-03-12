@@ -13,9 +13,18 @@ echo "installing nginx"
 dnf install nginx -y
 
    if [ $? -ne 0 ]; then
-      echo "installing nginx...failure"
+      echo "installing nginx...failure"  #here the previous command success so in 
+                                         #this if statement fail and else executed.
     
       exit 1
     else 
       echo " installin nginx...success"
+   fi
+dnf install mysql -y
+   if [ $? -ne 0 ]; then
+      echo "installing mysql...failure"  
+
+      exit 1
+    else 
+      echo " installin mysql...success"
    fi
