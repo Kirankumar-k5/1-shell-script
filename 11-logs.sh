@@ -20,6 +20,7 @@ VALIDATE(){
    fi
 }
 
+
 dnf install nginx -y &>> LOGS_FILE    # &>> means not to repetitive and store whether it is success or fail those are stored in logs file. 
 VALIDATE $? "installing nginx"        # $? called the function by using VALIDATE function name
 
